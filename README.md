@@ -1,3 +1,3 @@
 # CombinationTest
 
-![Screenshot](/img/screenshot.png)
+![Screenshot](/img/Benchmark.jpg)
