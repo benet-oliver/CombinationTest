@@ -3,20 +3,18 @@ using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using CombinationRooms;
-using CombinationRooms.Combinations;
+using CombineRooms.CombineHelpers;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.IO;
 
 namespace RoomDedupeCombinationBenchmark
 {
-
     public static class Program
     {
         public static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<Combination>();
+            _ = BenchmarkRunner.Run<Combination>();
         }
     }
 
@@ -60,7 +58,7 @@ namespace RoomDedupeCombinationBenchmark
         [Benchmark]
         public void RoomCombinationHotelbeds()
         {
-            HotelbedsCombination.GetBookableOptions(providerResponse.hotels.hotels[0], N);
+            ActualProviderCombination.CombineRates(providerResponse.hotels.hotels[0], N);
         }
 
         private IEnumerable<IEnumerable<RoomData<Rate>>> Combine(IRoomDedupeCombination<Rate> roomDedupeCombination)

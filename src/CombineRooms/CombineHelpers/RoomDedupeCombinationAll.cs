@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CombinationRooms.Combinations
+namespace CombineRooms.CombineHelpers
 {
     public class RoomDedupeCombinationAll<TRoom> : BaseRoomDedupeCombination<TRoom>
         where TRoom : class
@@ -33,19 +33,19 @@ namespace CombinationRooms.Combinations
                 roomsPerBoard.Add(actualRoom.roomCandidateID, roomsPerRoomCandidateID);
             }
 
-            if (!roomsPerRoomCandidateID.TryGetValue(actualRoom.roomType, out var roomsPerHash))
+            if (!roomsPerRoomCandidateID.TryGetValue(actualRoom.roomType, out var roomsPerType))
             {
-                roomsPerHash = new Dictionary<RoomHash, RoomData<TRoom>>();
-                roomsPerRoomCandidateID.Add(actualRoom.roomType, roomsPerHash);
+                roomsPerType = new Dictionary<RoomHash, RoomData<TRoom>>();
+                roomsPerRoomCandidateID.Add(actualRoom.roomType, roomsPerType);
             }
 
-            if (!roomsPerHash.TryGetValue(actualRoom.roomHash, out var roomPerType))
+            if (!roomsPerType.TryGetValue(actualRoom.roomHash, out var roomsPerHash))
             {
-                roomsPerHash.Add(actualRoom.roomHash, actualRoom);
+                roomsPerType.Add(actualRoom.roomHash, actualRoom);
             }
-            else if (ReplaceRoom(roomPerType, actualRoom))
+            else if (ReplaceRoom(roomsPerHash, actualRoom))
             {
-                roomsPerHash[actualRoom.roomHash] = actualRoom;
+                roomsPerType[actualRoom.roomHash] = actualRoom;
             }
         }
 

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CombinationRooms\CombinationRooms.csproj" />
+    <ProjectReference Include="..\..\src\CombineRooms\CombineRooms.csproj" />
   </ItemGroup>
 
   <ItemGroup>

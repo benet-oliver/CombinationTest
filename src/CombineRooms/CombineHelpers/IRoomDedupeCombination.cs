@@ -1,7 +1,6 @@
-﻿using CombinationRooms.Combinations;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace CombinationRooms
+namespace CombineRooms.CombineHelpers
 {
     public interface IRoomDedupeCombination<TRoom>
         where TRoom : class
@@ -10,6 +9,4 @@ namespace CombinationRooms
 
         IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCobinations();
     }
-
-
 }

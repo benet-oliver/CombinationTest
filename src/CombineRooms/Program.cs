@@ -1,8 +1,6 @@
-﻿using CombinationRooms.Combinations;
+﻿using CombineRooms.CombineHelpers;
 using Newtonsoft.Json;
-using RoomDedupeCombinationBenchmark;
 using System.IO;
-using System.Linq;
 
 namespace CombinationRooms
 {
@@ -11,8 +9,6 @@ namespace CombinationRooms
         private const int numberOfRooms = 3;
         public static void Main(string[] args)
         {
-
-
             using StreamReader sr = new StreamReader("response.json");
             var providerResponse = JsonConvert.DeserializeObject<ProviderResponse>(sr.ReadToEnd());
 
@@ -43,8 +39,6 @@ namespace CombinationRooms
             var combinations1 = roomDedupeCombination1.GetDedupedRoomCobinations();
             var combinations2 = roomDedupeCombination2.GetDedupedRoomCobinations();
             var combinations3 = roomDedupeCombination3.GetDedupedRoomCobinations();
-
-            int k = 1;
         }
     }
 }

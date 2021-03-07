@@ -1,14 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace CombinationRooms.Combinations
+namespace CombineRooms.CombineHelpers
 {
     public class RoomDedupeCombinationRoomType<TRoom> : BaseRoomDedupeCombination<TRoom>
         where TRoom : class
     {
-
         //Hotel-Board-RoomType-RoomCandidateID-RoomHash
         private readonly Dictionary<string, Dictionary<string, Dictionary<string, Dictionary<int, Dictionary<RoomHash, RoomData<TRoom>>>>>> data;
-
 
         public RoomDedupeCombinationRoomType()
         {
@@ -41,11 +39,11 @@ namespace CombinationRooms.Combinations
                 roomsPerType.Add(actualRoom.roomCandidateID, roomsPerRoomCandidateID);
             }
 
-            if (!roomsPerRoomCandidateID.TryGetValue(actualRoom.roomHash, out var roomPerType))
+            if (!roomsPerRoomCandidateID.TryGetValue(actualRoom.roomHash, out var roomsPerHash))
             {
                 roomsPerRoomCandidateID.Add(actualRoom.roomHash, actualRoom);
             }
-            else if (ReplaceRoom(roomPerType, actualRoom))
+            else if (ReplaceRoom(roomsPerHash, actualRoom))
             {
                 roomsPerRoomCandidateID[actualRoom.roomHash] = actualRoom;
             }
@@ -78,7 +76,6 @@ namespace CombinationRooms.Combinations
                         }
 
                         combinations.AddRange(roomsPerCandidateID.CartesianProduct());
-
                     }
                 }
             }

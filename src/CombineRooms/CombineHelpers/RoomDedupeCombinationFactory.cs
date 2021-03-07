@@ -1,4 +1,4 @@
-﻿namespace CombinationRooms.Combinations
+﻿namespace CombineRooms.CombineHelpers
 {
     public static class RoomDedupeCombinationFactory
     {

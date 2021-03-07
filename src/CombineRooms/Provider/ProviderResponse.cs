@@ -101,7 +101,6 @@ namespace CombinationRooms
         [JsonProperty("hotels")]
         public List<Hotel> hotels { get; set; }
     }
-
 }
 
 

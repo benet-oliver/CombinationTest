@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace CombinationRooms.Combinations
+namespace CombineRooms.CombineHelpers
 {
     public static class CatersianProductExtensions
     {

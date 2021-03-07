@@ -5,12 +5,10 @@ using System.Linq;
 
 namespace RoomDedupeCombinationBenchmark
 {
-    public static class HotelbedsCombination
+    public static class ActualProviderCombination
     {
-
-        public static List<List<Rate>> GetBookableOptions(Hotel providerHotel, int numberOfRooms)
+        public static List<List<Rate>> CombineRates(Hotel providerHotel, int numberOfRooms)
         {
-
             Dictionary<int, List<Rate>> rates = new Dictionary<int, List<Rate>>();
 
             foreach (var room in providerHotel.rooms)
@@ -29,14 +27,14 @@ namespace RoomDedupeCombinationBenchmark
                 }
             }
 
-            List<List<Rate>> ac = new List<List<Rate>>();
+            List<List<Rate>> acumulator = new List<List<Rate>>();
 
             ForEachAvailableCombination(
                 rates.Values,
                 board => board,
-                c => AcumulateRates(c, ac));
+                c => AcumulateRates(c, acumulator));
 
-            return ac;
+            return acumulator;
         }
 
         private static void ForEachAvailableCombination<TSource, TElement>(
@@ -74,21 +72,21 @@ namespace RoomDedupeCombinationBenchmark
             }
         }
 
-        private static void AcumulateRates(IReadOnlyList<Rate> rates, List<List<Rate>> ac)
+        private static void AcumulateRates(IReadOnlyList<Rate> rates, List<List<Rate>> acumulator)
         {
             if (!TryGetCombinationCommonInfo(rates))
             {
                 return;
             }
 
-            ac.Add(rates.ToList());
+            acumulator.Add(rates.ToList());
         }
 
         private static bool TryGetCombinationCommonInfo(IReadOnlyList<Rate> combination)
         {
             var boardCode = combination[0].boardCode;
 
-            for (var i = 1; i < combination.Count; i += 1)
+            for (var i = 1; i < combination.Count; ++i)
             {
                 if (combination[i].boardCode != boardCode)
                 {
@@ -97,6 +95,5 @@ namespace RoomDedupeCombinationBenchmark
             }
             return true;
         }
-
     }
 }

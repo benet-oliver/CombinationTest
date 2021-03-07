@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace CombinationRooms.Combinations
+namespace CombineRooms.CombineHelpers
 {
     public abstract class BaseRoomDedupeCombination<TRoom> :
         IRoomDedupeCombination<TRoom>
@@ -9,9 +9,6 @@ namespace CombinationRooms.Combinations
         public abstract void AddRoom(RoomData<TRoom> actualRoom);
         public abstract IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCobinations();
 
-        protected virtual bool ReplaceRoom(RoomData<TRoom> actualRoom, RoomData<TRoom> newRoom)
-        {
-            return actualRoom.price > newRoom.price;
-        }
+        protected virtual bool ReplaceRoom(RoomData<TRoom> actualRoom, RoomData<TRoom> newRoom) => actualRoom.price > newRoom.price;
     }
 }

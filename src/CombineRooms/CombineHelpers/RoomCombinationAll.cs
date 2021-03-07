@@ -1,26 +1,24 @@
 ﻿using System.Collections.Generic;
 
-namespace CombinationRooms.Combinations
+namespace CombineRooms.CombineHelpers
 {
     public class RoomCombinationAll<TRoom> : IRoomDedupeCombination<TRoom>
         where TRoom : class
     {
-
         //Hotel-Board-RoomCandidateID-RoomType-RoomHash
-        private readonly Dictionary<string, Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>> data;
-
+        private readonly Dictionary<string, Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>> _data;
 
         public RoomCombinationAll()
         {
-            data = new Dictionary<string, Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>>();
+            _data = new Dictionary<string, Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>>();
         }
 
         public void AddRoom(RoomData<TRoom> actualRoom)
         {
-            if (!data.TryGetValue(actualRoom.hotel, out var roomsPerHotel))
+            if (!_data.TryGetValue(actualRoom.hotel, out var roomsPerHotel))
             {
                 roomsPerHotel = new Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>();
-                data.Add(actualRoom.hotel, roomsPerHotel);
+                _data.Add(actualRoom.hotel, roomsPerHotel);
             }
 
             if (!roomsPerHotel.TryGetValue(actualRoom.board, out var roomsPerBoard))
@@ -36,14 +34,13 @@ namespace CombinationRooms.Combinations
             }
 
             roomsPerRoomCandidateID.Add(actualRoom);
-
         }
 
         public IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCobinations()
         {
             List<IEnumerable<RoomData<TRoom>>> combinations = new List<IEnumerable<RoomData<TRoom>>>();
 
-            foreach (var hotel in data)
+            foreach (var hotel in _data)
             {
                 foreach (var board in hotel.Value)
                 {
