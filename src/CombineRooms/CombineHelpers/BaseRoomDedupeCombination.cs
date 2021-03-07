@@ -7,7 +7,7 @@ namespace CombineRooms.CombineHelpers
         where TRoom : class
     {
         public abstract void AddRoom(RoomData<TRoom> actualRoom);
-        public abstract IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCobinations();
+        public abstract IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCombinations();
 
         protected virtual bool ReplaceRoom(RoomData<TRoom> actualRoom, RoomData<TRoom> newRoom) => actualRoom.price > newRoom.price;
     }

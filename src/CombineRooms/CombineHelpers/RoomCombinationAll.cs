@@ -36,7 +36,7 @@ namespace CombineRooms.CombineHelpers
             roomsPerRoomCandidateID.Add(actualRoom);
         }
 
-        public IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCobinations()
+        public IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCombinations()
         {
             List<IEnumerable<RoomData<TRoom>>> combinations = new List<IEnumerable<RoomData<TRoom>>>();
 

@@ -78,7 +78,7 @@ namespace RoomDedupeCombinationBenchmark
                 }
             }
 
-            return roomDedupeCombination.GetDedupedRoomCobinations();
+            return roomDedupeCombination.GetDedupedRoomCombinations();
         }
     }
 }

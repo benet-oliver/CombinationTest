@@ -7,6 +7,6 @@ namespace CombineRooms.CombineHelpers
     {
         void AddRoom(RoomData<TRoom> actualRoom);
 
-        IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCobinations();
+        IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCombinations();
     }
 }

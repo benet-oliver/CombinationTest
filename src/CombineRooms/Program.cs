@@ -36,9 +36,9 @@ namespace CombinationRooms
                 }
             }
 
-            var combinations1 = roomDedupeCombination1.GetDedupedRoomCobinations();
-            var combinations2 = roomDedupeCombination2.GetDedupedRoomCobinations();
-            var combinations3 = roomDedupeCombination3.GetDedupedRoomCobinations();
+            var combinations1 = roomDedupeCombination1.GetDedupedRoomCombinations();
+            var combinations2 = roomDedupeCombination2.GetDedupedRoomCombinations();
+            var combinations3 = roomDedupeCombination3.GetDedupedRoomCombinations();
         }
     }
 }

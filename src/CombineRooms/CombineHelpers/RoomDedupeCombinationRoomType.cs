@@ -49,7 +49,7 @@ namespace CombineRooms.CombineHelpers
             }
         }
 
-        public override IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCobinations()
+        public override IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCombinations()
         {
             Dictionary<int, List<RoomData<TRoom>>> roomsPerCandidateID;
 
