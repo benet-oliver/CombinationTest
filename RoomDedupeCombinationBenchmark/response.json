@@ -1,0 +1,1028 @@
+﻿{
+  "auditData": {
+    "processTime": "158",
+    "timestamp": "2018-12-17T16:13:19.921Z",
+    "requestHost": "212.66.164.13",
+    "serverId": "sa3RKSJACHXE79K.env",
+    "environment": "[int]",
+    "release": "4e21884df45756e39e474aab3fe4fbc6adfcbcb0",
+    "token": "c6ce466d-82fe-4fac-8f21-536485be4da3",
+    "internal": "0|A09243E85DB5477DA580C281A6DD9DBE1613|US|07|4|37||||||||||||51||1~1~2~0|0|0||0|xxxxxxxxxxxxxxxxxxxxxxxx|||"
+  },
+  "hotels": {
+    "hotels": [
+      {
+        "code": 297,
+        "name": "Occidental Playa de Palma",
+        "categoryCode": "4EST",
+        "categoryName": "4 STARS",
+        "destinationCode": "PMI",
+        "destinationName": "Majorca",
+        "zoneCode": 20,
+        "zoneName": "Playa de Palma",
+        "latitude": "39.516336",
+        "longitude": "2.749349",
+        "rooms": [
+          {
+            "code": "DBT.ST",
+            "name": "Double or Twin STANDARD",
+            "rates": [
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.ST|NRF-SUMMERHB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "137.62",
+                "allotment": 96,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "68.81",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "137.62",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "13.76",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.ST|CG-BAR17BB|BB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "146.19",
+                "allotment": 96,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "BB",
+                "boardName": "BED AND BREAKFAST",
+                "cancellationPolicies": [
+                  {
+                    "amount": "73.09",
+                    "from": "2019-06-07T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "146.19",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "14.62",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.ST|CG-BAR17HB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "152.91",
+                "allotment": 96,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "76.45",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "152.91",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "15.29",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.ST|NRF-SUMMERAI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "184.50",
+                "allotment": 96,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "92.25",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "184.50",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "18.45",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.ST|CG-BAR17AI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "205.00",
+                "allotment": 96,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "102.50",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "205.00",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "20.50",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              }
+            ]
+          },
+          {
+            "code": "APT.C2",
+            "name": "APARTMENT CAPACITY 2",
+            "rates": [
+              {
+                "rateKey": "20190615|20190616|W|1|297|APT.C2|NRF-SUMMERHB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "155.76",
+                "allotment": 28,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "77.88",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "155.76",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "15.58",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|APT.C2|CG-BAR17BB|BB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "166.35",
+                "allotment": 28,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "BB",
+                "boardName": "BED AND BREAKFAST",
+                "cancellationPolicies": [
+                  {
+                    "amount": "83.17",
+                    "from": "2019-06-07T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "166.35",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "16.64",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|APT.C2|CG-BAR17HB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "173.07",
+                "allotment": 28,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "86.53",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "173.07",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "17.31",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|APT.C2|NRF-SUMMERAI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "202.65",
+                "allotment": 28,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "101.33",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "202.65",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "20.27",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|APT.C2|CG-BAR17AI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "225.16",
+                "allotment": 28,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "112.58",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "225.16",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "22.52",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              }
+            ]
+          },
+          {
+            "code": "DBT.SU",
+            "name": "Double or Twin SUPERIOR",
+            "rates": [
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.SU|NRF-SUMMERHB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "155.76",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "77.88",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "155.76",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "15.58",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.SU|CG-BAR17BB|BB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "166.35",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "BB",
+                "boardName": "BED AND BREAKFAST",
+                "cancellationPolicies": [
+                  {
+                    "amount": "83.17",
+                    "from": "2019-06-07T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "166.35",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "16.64",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.SU|CG-BAR17HB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "173.07",
+                "allotment": 16,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "86.53",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "173.07",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "17.31",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.SU|NRF-SUMMERAI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "202.65",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "101.33",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "202.65",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "20.27",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|DBT.SU|CG-BAR17AI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "225.16",
+                "allotment": 16,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "112.58",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "225.16",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "22.52",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              }
+            ]
+          },
+          {
+            "code": "JSU.C2",
+            "name": "JUNIOR SUITE CAPACITY 2",
+            "rates": [
+              {
+                "rateKey": "20190615|20190616|W|1|297|JSU.C2|NRF-SUMMERHB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "166.35",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "83.17",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "166.35",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "16.64",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|JSU.C2|CG-BAR17BB|BB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "178.12",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "BB",
+                "boardName": "BED AND BREAKFAST",
+                "cancellationPolicies": [
+                  {
+                    "amount": "89.06",
+                    "from": "2019-06-07T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "178.12",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "17.81",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|JSU.C2|CG-BAR17HB|HB||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "184.84",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "HB",
+                "boardName": "HALF BOARD",
+                "cancellationPolicies": [
+                  {
+                    "amount": "92.42",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "184.84",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "18.48",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|JSU.C2|NRF-SUMMERAI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "213.23",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "106.61",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "213.23",
+                    "from": "2019-06-14T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "21.32",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0,
+                "promotions": [
+                  {
+                    "code": "073",
+                    "name": "Non-refundable rate. No amendments permitted"
+                  },
+                  {
+                    "code": "042",
+                    "name": "Special Offer",
+                    "remark": "Special offer - Special offer"
+                  }
+                ]
+              },
+              {
+                "rateKey": "20190615|20190616|W|1|297|JSU.C2|CG-BAR17AI|AI||1~2~0||N@A09243E85DB5477DA580C281A6DD9DBE1613",
+                "rateClass": "NOR",
+                "rateType": "BOOKABLE",
+                "net": "236.93",
+                "allotment": 20,
+                "paymentType": "AT_WEB",
+                "packaging": false,
+                "boardCode": "AI",
+                "boardName": "ALL INCLUSIVE",
+                "cancellationPolicies": [
+                  {
+                    "amount": "118.47",
+                    "from": "2019-05-31T21:59:00.000Z"
+                  },
+                  {
+                    "amount": "236.93",
+                    "from": "2019-06-13T21:59:00.000Z"
+                  }
+                ],
+                "taxes": {
+                  "taxes": [
+                    {
+                      "included": false,
+                      "amount": "6.60",
+                      "currency": "EUR",
+                      "type": "TAX",
+                      "clientAmount": "6.60",
+                      "clientCurrency": "EUR"
+                    },
+                    {
+                      "included": true,
+                      "percent": "10.00",
+                      "amount": "23.69",
+                      "currency": "EUR",
+                      "type": "TAX"
+                    }
+                  ],
+                  "allIncluded": false
+                },
+                "rooms": 1,
+                "adults": 2,
+                "children": 0
+              }
+            ]
+          }
+        ],
+        "minRate": "137.62",
+        "maxRate": "236.93",
+        "currency": "EUR"
+      }
+    ],
+    "checkIn": "2019-06-15T00:00:00.000Z",
+    "total": 4,
+    "checkOut": "2019-06-16T00:00:00.000Z"
+  }
+}
