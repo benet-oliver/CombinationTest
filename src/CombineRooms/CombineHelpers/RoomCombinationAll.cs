@@ -6,24 +6,24 @@ namespace CombineRooms.CombineHelpers
         where TRoom : class
     {
         //Hotel-Board-RoomCandidateID-RoomType-RoomHash
-        private readonly Dictionary<string, Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>> _data;
+        private readonly Dictionary<string, Dictionary<string, SortedDictionary<int, List<RoomData<TRoom>>>>> _data;
 
         public RoomCombinationAll()
         {
-            _data = new Dictionary<string, Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>>();
+            _data = new Dictionary<string, Dictionary<string, SortedDictionary<int, List<RoomData<TRoom>>>>>();
         }
 
         public void AddRoom(RoomData<TRoom> actualRoom)
         {
             if (!_data.TryGetValue(actualRoom.hotel, out var roomsPerHotel))
             {
-                roomsPerHotel = new Dictionary<string, Dictionary<int, List<RoomData<TRoom>>>>();
+                roomsPerHotel = new Dictionary<string, SortedDictionary<int, List<RoomData<TRoom>>>>();
                 _data.Add(actualRoom.hotel, roomsPerHotel);
             }
 
             if (!roomsPerHotel.TryGetValue(actualRoom.board, out var roomsPerBoard))
             {
-                roomsPerBoard = new Dictionary<int, List<RoomData<TRoom>>>();
+                roomsPerBoard = new SortedDictionary<int, List<RoomData<TRoom>>>();
                 roomsPerHotel.Add(actualRoom.board, roomsPerBoard);
             }
 

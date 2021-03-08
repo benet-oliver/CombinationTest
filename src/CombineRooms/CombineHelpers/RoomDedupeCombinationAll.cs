@@ -6,24 +6,24 @@ namespace CombineRooms.CombineHelpers
         where TRoom : class
     {
         //Hotel-Board-RoomCandidateID-RoomType-RoomHash
-        private readonly Dictionary<string, Dictionary<string, Dictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>>> data;
+        private readonly Dictionary<string, Dictionary<string, SortedDictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>>> data;
 
         public RoomDedupeCombinationAll()
         {
-            data = new Dictionary<string, Dictionary<string, Dictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>>>();
+            data = new Dictionary<string, Dictionary<string, SortedDictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>>>();
         }
 
         public override void AddRoom(RoomData<TRoom> actualRoom)
         {
             if (!data.TryGetValue(actualRoom.hotel, out var roomsPerHotel))
             {
-                roomsPerHotel = new Dictionary<string, Dictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>>();
+                roomsPerHotel = new Dictionary<string, SortedDictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>>();
                 data.Add(actualRoom.hotel, roomsPerHotel);
             }
 
             if (!roomsPerHotel.TryGetValue(actualRoom.board, out var roomsPerBoard))
             {
-                roomsPerBoard = new Dictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>();
+                roomsPerBoard = new SortedDictionary<int, Dictionary<string, Dictionary<RoomHash, RoomData<TRoom>>>>();
                 roomsPerHotel.Add(actualRoom.board, roomsPerBoard);
             }
 
@@ -51,7 +51,7 @@ namespace CombineRooms.CombineHelpers
 
         public override IEnumerable<IEnumerable<RoomData<TRoom>>> GetDedupedRoomCombinations()
         {
-            Dictionary<int, List<RoomData<TRoom>>> roomsPerCandidateID;
+            SortedDictionary<int, List<RoomData<TRoom>>> roomsPerCandidateID;
 
             List<IEnumerable<RoomData<TRoom>>> combinations = new List<IEnumerable<RoomData<TRoom>>>();
 
@@ -59,7 +59,7 @@ namespace CombineRooms.CombineHelpers
             {
                 foreach (var board in hotel.Value)
                 {
-                    roomsPerCandidateID = new Dictionary<int, List<RoomData<TRoom>>>();
+                    roomsPerCandidateID = new SortedDictionary<int, List<RoomData<TRoom>>>();
 
                     foreach (var roomCandidate in board.Value)
                     {
