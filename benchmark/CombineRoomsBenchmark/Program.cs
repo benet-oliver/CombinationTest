@@ -58,7 +58,7 @@ namespace RoomDedupeCombinationBenchmark
         [Benchmark]
         public void RoomCombinationHotelbeds()
         {
-            ActualProviderCombination.CombineRates(providerResponse.hotels.hotels[0], N);
+            Combine(new RoomCombinationHotelbeds()).Consume(consumer);
         }
 
         private IEnumerable<IEnumerable<RoomData<Rate>>> Combine(IRoomDedupeCombination<Rate> roomDedupeCombination)

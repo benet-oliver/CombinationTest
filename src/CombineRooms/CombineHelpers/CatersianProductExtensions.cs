@@ -5,7 +5,7 @@ namespace CombineRooms.CombineHelpers
 {
     public static class CatersianProductExtensions
     {
-        public static IEnumerable<IEnumerable<T>> CartesianProduct<T>(this IDictionary<int, List<T>> sequences)
+        public static IEnumerable<IEnumerable<T>> CartesianProduct<T, TKey>(this IDictionary<TKey, List<T>> sequences)
         {
             IEnumerable<IEnumerable<T>> emptyProduct =
               new[] { Enumerable.Empty<T>() };
