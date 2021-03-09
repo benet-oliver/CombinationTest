@@ -18,7 +18,7 @@ namespace RoomDedupeCombinationBenchmark
         }
     }
 
-    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
+    [SimpleJob(RuntimeMoniker.NetCoreApp31, launchCount: 1, warmupCount: 3, targetCount: 4)]
     [RPlotExporter]
     [MemoryDiagnoser]
     public class Combination
@@ -27,7 +27,7 @@ namespace RoomDedupeCombinationBenchmark
 
         private readonly Consumer consumer = new Consumer();
 
-        [Params(1, 2, 3, 4, 5, 6)]
+        [Params(1, 2, 3, 4, 5)]
         public int N;
 
         [GlobalSetup]
@@ -37,22 +37,28 @@ namespace RoomDedupeCombinationBenchmark
             providerResponse = JsonConvert.DeserializeObject<ProviderResponse>(sr.ReadToEnd());
         }
 
-        [Benchmark]
-        public void RoomDedupeCombinationAll()
-        {
-            Combine(new RoomDedupeCombinationAll<Rate>()).Consume(consumer);
-        }
+        //[Benchmark]
+        //public void RoomDedupeCombinationAll()
+        //{
+        //    Combine(new RoomDedupeCombinationAll<Rate>()).Consume(consumer);
+        //}
+
+        //[Benchmark]
+        //public void RoomDedupeCombinationRoomType()
+        //{
+        //    Combine(new RoomDedupeCombinationRoomType<Rate>()).Consume(consumer);
+        //}
+
+        //[Benchmark]
+        //public void RoomCombinationAll()
+        //{
+        //    Combine(new RoomCombinationAll<Rate>()).Consume(consumer);
+        //}
 
         [Benchmark]
-        public void RoomDedupeCombinationRoomType()
+        public void RoomCombinationHotelbedsAlternative()
         {
-            Combine(new RoomDedupeCombinationRoomType<Rate>()).Consume(consumer);
-        }
-
-        [Benchmark]
-        public void RoomCombinationAll()
-        {
-            Combine(new RoomCombinationAll<Rate>()).Consume(consumer);
+            Combine(new RoomCombinationHotelbedsAlternative()).Consume(consumer);
         }
 
         [Benchmark]

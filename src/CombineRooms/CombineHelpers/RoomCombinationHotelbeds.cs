@@ -1,4 +1,5 @@
 ﻿using CombinationRooms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -24,28 +25,68 @@ namespace CombineRooms.CombineHelpers
         }
         public IEnumerable<IEnumerable<RoomData<Rate>>> GetDedupedRoomCombinations()
         {
-            var acumulator = new List<IEnumerable<RoomData<Rate>>>();
+            List<List<RoomData<Rate>>> acumulator = new List<List<RoomData<Rate>>>();
 
-            foreach (var rates in this._data.CartesianProduct())
-            {
-                if (!TryGetCombinationCommonInfo(rates))
-                {
-                    continue;
-                }
-
-                acumulator.Add(rates);
-            }
+            ForEachAvailableCombination(
+                this._data.Values,
+                board => board,
+                c => AcumulateRates(c, acumulator));
 
             return acumulator;
         }
 
-        private static bool TryGetCombinationCommonInfo(IEnumerable<RoomData<Rate>> combination)
+        private void AcumulateRates(IReadOnlyList<RoomData<Rate>> rates, List<List<RoomData<Rate>>> acumulator)
         {
-            var boardCode = combination.ElementAt(0).board;
-
-            for (var i = 1; i < combination.Count(); ++i)
+            if (!TryGetCombinationCommonInfo(rates))
             {
-                if (combination.ElementAt(i).board != boardCode)
+                return;
+            }
+
+            acumulator.Add(rates.ToList());
+        }
+
+        private static void ForEachAvailableCombination<TSource, TElement>(
+            IEnumerable<TSource> enumerable,
+            Func<TSource, IEnumerable<TElement>> getElements,
+            Action<IReadOnlyList<TElement>> consumeCombination)
+        {
+            var list = enumerable.ToList();
+            var currentCombination = new List<TElement>();
+
+            ForEachAvailableCombinationAux(0);
+
+            void ForEachAvailableCombinationAux(int currentIndex)
+            {
+                Action<int> action;
+                if (currentIndex < list.Count - 1)
+                {
+                    action = ForEachAvailableCombinationAux;
+                }
+                else
+                {
+                    action = ConsumeCurrentCombination;
+                }
+
+                var currentElements = getElements(list[currentIndex]);
+
+                foreach (var element in currentElements)
+                {
+                    currentCombination.Add(element);
+                    action(currentIndex + 1);
+                    currentCombination.RemoveAt(currentCombination.Count - 1);
+                }
+
+                void ConsumeCurrentCombination(int _) => consumeCombination(currentCombination);
+            }
+        }
+
+        private static bool TryGetCombinationCommonInfo(IReadOnlyList<RoomData<Rate>> combination)
+        {
+            var boardCode = combination[0].board;
+
+            for (var i = 1; i < combination.Count; ++i)
+            {
+                if (combination[i].board != boardCode)
                 {
                     return false;
                 }
